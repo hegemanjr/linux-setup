@@ -1,6 +1,6 @@
 #!/bin/bash
  
-# curl -sSL https://gist.githubusercontent.com/hegemanjr/097ca3ba9e494482d517ee856b503b59/raw/b01191ca02566611e5c080b89f69e73e9aa90ed4/install_apps.sh | bash
+# curl -sSL https://raw.githubusercontent.com/hegemanjr/linux-setup/master/linux-setup.sh | bash
  
 # Updates
 sudo apt update
