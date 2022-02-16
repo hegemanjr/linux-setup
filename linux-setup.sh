@@ -11,7 +11,7 @@ cd ~/Downloads
 
 echo "Install apps with apt and snap"
 # Install apps with apt and snap
-sudo apt install chromium-browser flameshot virtualbox vagrant gparted handbrake obs-studio gimp filezilla vlc slack -y 
+sudo apt install chromium-browser flameshot virtualbox gparted handbrake obs-studio gimp filezilla vlc slack -y
 sudo snap install discord youtube-music-desktop-app postman
 
 echo "Install GitKraken"
@@ -22,6 +22,12 @@ sudo dpkg -i gitkraken-amd64.deb
 
 echo "Remove previous JetBrains/PhpStorm download(s)"
 rm -rf jetbrains-toolbox-*.tar.gz
+
+echo "Install newest Vagrant"
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt-get update && sudo apt-get install vagrant
+
 
 echo "Download JetBrains/PhpStorm"
 # Install JetBrains/PhpStorm
